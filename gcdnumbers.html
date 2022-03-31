@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GCD of a number</title>
+  </head>
+  <body>
+    <script>
+     let number1 = prompt('Enter a first positive integer: ');
+let number2 = prompt('Enter a second positive integer: ');
+
+// looping until both numbers are equal
+while(number1 != number2){
+    if(number1 > number2) {
+        number1 -= number2;
+    }
+    else {
+        number2 -= number1;
+    }
+}
+
+// display the gcd
+console.log(`GCD is ${number1}`);
+    </script>
+  </body>
+</html>
